@@ -6,10 +6,7 @@ namespace DesafioProjetoHospedagem.Models
         public Suite Suite { get; set; }
         public int DiasReservados { get; set; }
 
-        public Reserva() 
-        {
-//            Suite = new Suite();
-        }
+        public Reserva() {}
 
         public Reserva(int diasReservados)
         {
@@ -43,7 +40,7 @@ namespace DesafioProjetoHospedagem.Models
 
             if (DiasReservados >= 10)
             {
-                valor *= 0.9m; // Concede um desconto de 10%
+                valor *= 0.90m; // Concede um desconto de 10%
             }
             return valor;
         }
